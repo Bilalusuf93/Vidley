@@ -1,0 +1,22 @@
+﻿@model Vidley.Models.Customer
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+@if (Model==null)
+{
+<p>Record Not Found</p>
+}
+    
+else {
+<h3>@Model.Name</h3>
+<ul>
+    <li>Membership type: @Model.MemberShipType.Name</li>
+    <li>BirthDate: @Model.Dob</li>
+</ul>
+    
+}
+    
+
